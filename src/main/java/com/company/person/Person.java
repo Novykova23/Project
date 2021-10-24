@@ -1,14 +1,24 @@
 package com.company.person;
 
-public abstract class Person implements IdAware<String> {
+import com.company.money.Currency;
+
+public abstract class Person{
     private final String givenName;
     private final String familyName;
-    private final String dateOfBirth;
 
-    protected Person(String givenName, String familyName, String dateOfBirth) {
+    protected Person(String givenName) {
+        this(givenName, );
+    }
+
+    protected Person(String givenName, String familyName) {
         this.givenName = givenName;
         this.familyName = familyName;
-        this.dateOfBirth = dateOfBirth;
+    }
+
+    public Person(String givenName, String familyName) {
+        this.givenName = givenName;
+
+        this.familyName = familyName;
     }
 
 
@@ -19,24 +29,15 @@ public abstract class Person implements IdAware<String> {
     protected String getFamilyName() {
         return familyName;
     }
-
-    protected String getDateOfBirth() {
-        return dateOfBirth;
-    }
     
 
     public long getAge() {
-        return ChronoUnit.YEARS.between(this.dateOfBirth, LocalDate.now());
+        return 0;
     }
 
-    @Override
-    public String toString() {
-        return "Person{" +
-                "id='" + id + '\'' +
-                ", givenName='" + givenName + '\'' +
-                ", familyName='" + familyName + '\'' +
-                ", age=" + getAge() +
-                '}';
+    protected String getId() {
     }
+
+    public abstract int hash(int amount, Currency currency);
 }
 
