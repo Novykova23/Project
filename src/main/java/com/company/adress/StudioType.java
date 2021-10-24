@@ -1,2 +1,5 @@
-package com.company.adress;public class StudioType {
+package com.company.adress;
+
+public enum StudioType {
+    PHOTO, VIDEO, GAME
 }
