@@ -1,2 +1,5 @@
-package com.company.person;public interface Videograph {
+package com.company.person;
+
+public interface Videograph{
+    void makeVideo();
 }
