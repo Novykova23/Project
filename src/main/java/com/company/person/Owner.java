@@ -10,7 +10,7 @@ public final class Owner extends Person {
     private Objects studios;
 
     public Owner(String givenName, String familyName, String dateOfBirth) {
-        super(givenName, familyName);
+        super(givenName);
     }
 
     @Override
@@ -19,7 +19,7 @@ public final class Owner extends Person {
     }
 
     public Owner(String john, String doe) {
-        super(givenName, familyName);
+        super(givenName);
     }
 
     public Objects getStudios() {
