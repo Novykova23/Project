@@ -3,19 +3,17 @@ package com.company.person;
 import com.company.money.Currency;
 
 public abstract class Person{
-    private final String givenName;
-    private final String familyName;
+    private String givenName;
+    private String familyName;
 
-    protected Person(String givenName) {
-        this(givenName, );
-    }
-
-    protected Person(String givenName, String familyName) {
-        this.givenName = givenName;
+    protected Person(String givenName, String givenName1, String familyName) {
+        this(givenName); this.givenName = givenName;
+        this.givenName = givenName1;
         this.familyName = familyName;
     }
 
-    public Person(String givenName, String familyName) {
+
+    public Person(String givenName) {
         this.givenName = givenName;
 
         this.familyName = familyName;
@@ -33,11 +31,6 @@ public abstract class Person{
 
     public long getAge() {
         return 0;
-    }
-
-    protected String getId() {
-    }
-
-    public abstract int hash(int amount, Currency currency);
+    };
 }
 
