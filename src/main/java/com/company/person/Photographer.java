@@ -4,7 +4,7 @@ import com.company.money.Currency;
 
 public final class Photographer extends Person {
     public Photographer(String givenName, String familyName) {
-        super(givenName, familyName);
+        super(givenName);
     }
 
     @Override
