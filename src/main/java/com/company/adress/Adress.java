@@ -2,13 +2,13 @@ package com.company.adress;
 
 import java.util.Objects;
 
-public final class Address{
+public final class Adress{
     private final String city;
     private final String street;
     private final String country;
     private final String postCode;
 
-    public Address(String city, String street, String country, String postCode) {
+    public Adress(String city, String street, String country, String postCode) {
         this.city = city;
         this.street = street;
         this.country = country;
@@ -35,7 +35,7 @@ public final class Address{
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Address address = (Address) o;
+        Adress address = (Adress) o;
         return Objects.equals(city, address.city) && Objects.equals(street, address.street) && Objects.equals(country, address.country) && Objects.equals(postCode, address.postCode);
     }
 
@@ -46,7 +46,7 @@ public final class Address{
 
     @Override
     public String toString() {
-        return "Address{" +
+        return "Adress{" +
                 "city='" + city + '\'' +
                 ", street='" + street + '\'' +
                 ", country='" + country + '\'' +
