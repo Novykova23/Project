@@ -2,10 +2,10 @@ package com.company.adress;
 
 public final class Studio { ;
     private final String name;
-    private final Address address;
-    private final StudioType studioType;
+    private final String address;
+    private final String studioType;
 
-    public Studio(String name, Address address, StudioType type) {
+    public Studio(String name, String address, String type) {
         this.name = name;
         this.address = address;
         this.studioType = type;
@@ -15,13 +15,8 @@ public final class Studio { ;
         return name;
     }
 
-    public Address getAddress() {
+    public String getAddress() {
         return address;
-    }
-
-
-    public StudioType getStudioType() {
-        return studioType;
     }
 
 
