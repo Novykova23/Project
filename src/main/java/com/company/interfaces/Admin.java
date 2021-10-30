@@ -1,2 +1,7 @@
-package com.company.interfases;public interface Admin {
+package com.company.interfaces;
+
+interface Admin {
+    default void acceptOrders() {
+
+    }
 }
