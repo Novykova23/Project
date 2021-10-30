@@ -1,14 +1,11 @@
 package com.company.person;
 
-import com.company.money.Currency;
-
 public abstract class Person{
     private String givenName;
     private String familyName;
 
-    protected Person(String givenName, String givenName1, String familyName) {
-        this(givenName); this.givenName = givenName;
-        this.givenName = givenName1;
+    protected Person(String givenName, String familyName) {
+        this.givenName = givenName;
         this.familyName = familyName;
     }
 
@@ -17,6 +14,9 @@ public abstract class Person{
         this.givenName = givenName;
 
         this.familyName = familyName;
+    }
+
+    protected Person(String givenName, String givenName1, String familyName) {
     }
 
 
