@@ -1,6 +1,6 @@
 package com.company.main;
 
-import com.company.adress.Address;
+import com.company.adress.Adress;
 import com.company.adress.Studio;
 import com.company.adress.StudioType;
 import com.company.money.Money;
@@ -13,8 +13,8 @@ public class Main {
 
     public static void main(String[] args) {
         final Owner owner = new Owner("John", "Doe");
-        final Studio lensQueenStudio = new Studio("Lens Queen", new Address("Chernivtsi", "Kobilyanska. 10", "Ukraine", "58000"), StudioType.PHOTO);
-        final Studio ambientPortraitureStudio = new Studio("Ambient Portraiture", new Address("Ternopil", "Holovna, 11", "Ukraine", "58000"), StudioType.PHOTO);
+        final Studio lensQueenStudio = new Studio("Lens Queen", new Adress("Chernivtsi", "Kobilyanska. 10", "Ukraine", "58000"), StudioType.PHOTO);
+        final Studio ambientPortraitureStudio = new Studio("Ambient Portraiture", new Adress("Ternopil", "Holovna, 11", "Ukraine", "58000"), StudioType.PHOTO);
 
         owner.assignStudio(lensQueenStudio);
         owner.assignStudio(ambientPortraitureStudio);
@@ -42,4 +42,3 @@ public class Main {
         }
     }
 }
-
