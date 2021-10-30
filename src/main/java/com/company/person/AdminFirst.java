@@ -1,8 +1,8 @@
 package com.company.person;
 
-public class Admin extends Person{
-    protected Admin(String givenName, String givenName1, String familyName) {
-        super(givenName, givenName1, familyName);
+public class AdminFirst extends Person{
+    protected AdminFirst(String givenName, String familyName) {
+        super(givenName, familyName);
     }
 
     public interface Admin {
