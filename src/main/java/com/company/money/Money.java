@@ -1,12 +1,10 @@
 package com.company.money;
 
-import com.company.person.Owner;
-
-public final class Money {
+public final class Money{
     private final int amount;
-    private final Currency currency;
+    private final int currency;
 
-    public Money(int amount, Currency currency) {
+    public Money(int amount, int currency) {
         this.amount = amount;
         this.currency = currency;
     }
@@ -15,37 +13,22 @@ public final class Money {
         return amount;
     }
 
-    public Currency getCurrency() {
-        return currency;
-    }
-
     public int amount() {
         return amount;
     }
 
-    public Currency currency() {
-        return currency;
-    }
 
-    public static Money usd(int amount) {
-        return new Money(amount, Currency.USD);
+    public static void usd(int amount) {
     }
 
     public static Money eur(int amount) {
-        return new Money(amount, Currency.EUR);
+        return null;
     }
 
-    public static Money uah(int amount) {
-        return new Money(amount, Currency.UAH);
+    public static void uah(int amount) {
+
     }
 
-
-    @Override
-    public String toString() {
-        final String currencyLabel = amount == 1 ? currency.getnText() : currency.getText();
-
-        return String.format("%d %s", amount, currencyLabel);
-    }
 
 }
 
