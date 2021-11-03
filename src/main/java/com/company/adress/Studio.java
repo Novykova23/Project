@@ -1,23 +1,18 @@
 package com.company.adress;
 
-public final class Studio { ;
+public final class Studio {
+    ;
     private final String name;
-    private final String address;
+    private final String adress;
     private final String studioType;
 
-    public Studio(String name, String address, String type) {
+    public Studio(String name, String adress, String type) {
         this.name = name;
-        this.address = address;
+        this.adress = adress;
         this.studioType = type;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public String getAddress() {
-        return address;
-    }
+    public Studio(String lens_queen, Adress adress, StudioType photo) {
 
 
 
@@ -26,8 +21,9 @@ public final class Studio { ;
         return "Studio{" +
                 ", name='" + name + '\'' +
                 ", address=" + address +
-                ", studioType=" + studioType +
-                '}';
+                ", studioType=" + studioType + "}";
     }
 
 }
+
+
