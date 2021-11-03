@@ -1,12 +1,14 @@
 package com.company.person;
 
 public final class Customer extends Person {
-    public Customer(String givenName, String familyName, String Age) {
+    private static String givenName;
+
+    public Customer() {
         super(givenName);
     }
 
     public Customer(String mr, String proper) {
-        super(givenName, givenName1, familyName);
+        this();
     }
 
     @Override
