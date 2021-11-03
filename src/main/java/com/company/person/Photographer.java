@@ -1,8 +1,11 @@
 package com.company.person;
 
 public final class Photographer extends Person {
+    private String familyName;
+
     public Photographer(String givenName, String familyName) {
         super(givenName);
+        this.familyName = familyName;
     }
 
     public String getGivenName() {
@@ -11,10 +14,6 @@ public final class Photographer extends Person {
 
     public String getFamilyName() {
         return super.getFamilyName();
-    }
-
-    public int hash(int amount, int currency) {
-        return 0;
     }
 
     public long getAge() {
