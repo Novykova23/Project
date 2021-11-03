@@ -2,7 +2,7 @@ package com.company.person;
 
 public final class Owner extends Person {
 
-    public Owner(String givenName, String familyName, String dateOfBirth) {
+    public Owner(String familyName, String givenName) {
         super(givenName);
     }
 
@@ -10,8 +10,8 @@ public final class Owner extends Person {
         return 0;
     }
 
-    public Owner(String john, String doe) {
-        super(givenName, givenName1, familyName);
+    public Owner(String john, String doe, String familyName, String givenName) {
+        super(givenName, familyName);
     }
 
 
