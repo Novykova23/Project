@@ -1,7 +1,7 @@
 package com.company.interfaces;
 
-interface Admin {
-    default void acceptOrders() {
+public interface Admin {
+    static void acceptOrders() {
 
     }
 }
