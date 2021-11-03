@@ -15,15 +15,15 @@ public final class Studio {
     public Studio(String lens_queen, Adress adress, StudioType photo) {
 
 
-
-    @Override
-    public String toString() {
-        return "Studio{" +
-                ", name='" + name + '\'' +
-                ", address=" + address +
-                ", studioType=" + studioType + "}";
+        @Override
+        public String toString() {
+            return "Studio{" +
+                    ", name='" + name + '\'' +
+                    ", address=" + address +
+                    ", studioType=" + studioType + "}";
+        }
     }
-
 }
+
 
 
