@@ -1,6 +1,6 @@
 package com.company.money;
 
-public final class Money{
+final class Money{
     private final int amount;
     private final int currency;
 
@@ -30,5 +30,8 @@ public final class Money{
     }
 
 
+    public int getCurrency() {
+        return currency;
+    }
 }
 
