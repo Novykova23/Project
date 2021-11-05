@@ -23,13 +23,5 @@ public final class Owner extends Person {
                 '}';
     }
 
-
-    public void assignStudio(com.company.adress.Studio lensQueenStudio) {
-    }
-
-    private class Studio{
-        public void setOwner(Owner owner) {
-        }
-    }
 }
 

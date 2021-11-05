@@ -6,13 +6,10 @@ public final class Studio {
     private final String adress;
     private final String studioType;
 
-    public Studio(String name, String adress, String type) {
+    public Studio(String name, Adress adress, StudioType type) {
         this.name = name;
         this.adress = adress;
         this.studioType = type;
-    }
-
-    public Studio(String lens_queen, Adress adress, StudioType photo) {
 
 
         @Override

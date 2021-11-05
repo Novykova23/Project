@@ -12,22 +12,19 @@ public abstract class Person{
 
     public Person(String givenName) {
         this.givenName = givenName;
-
         this.familyName = familyName;
     }
-
-    protected Person(String givenName, String givenName1, String familyName) {
-    }
-
 
     protected String getGivenName() {
         return givenName;
     }
 
-    protected String getFamilyName() {
+    protected static String getFamilyName() {
         return familyName;
     }
-    
+
+
+    public abstract String getFamilyName();
 
     public long getAge() {
         return 0;
