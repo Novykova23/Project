@@ -16,7 +16,7 @@ public final class Studio {
         public String toString() {
             return "Studio{" +
                     ", name='" + name + '\'' +
-                    ", address=" + address +
+                    ", adress=" + adress +
                     ", studioType=" + studioType + "}";
         }
     }
