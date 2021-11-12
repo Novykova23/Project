@@ -35,8 +35,8 @@ public final class Adress{
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Adress address = (Adress) o;
-        return Objects.equals(city, address.city) && Objects.equals(street, address.street) && Objects.equals(country, address.country) && Objects.equals(postCode, address.postCode);
+        Adress adress = (Adress) o;
+        return Objects.equals(city, adress.city) && Objects.equals(street, adress.street) && Objects.equals(country, adress.country) && Objects.equals(postCode, adress.postCode);
     }
 
     @Override
