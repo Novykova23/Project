@@ -3,14 +3,14 @@ package com.company.adress;
 public final class Studio {
     ;
     private final String name;
-    private final String adress;
-    private final String studioType;
+    private final Adress adress;
+    private final StudioType studioType;
 
     public Studio(String name, Adress adress, StudioType type) {
         this.name = name;
         this.adress = adress;
         this.studioType = type;
-
+    }
 
         @Override
         public String toString() {
@@ -19,7 +19,6 @@ public final class Studio {
                     ", adress=" + adress +
                     ", studioType=" + studioType + "}";
         }
-    }
 }
 
 

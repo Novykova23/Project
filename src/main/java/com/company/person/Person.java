@@ -19,12 +19,10 @@ public abstract class Person{
         return givenName;
     }
 
-    protected static String getFamilyName() {
+    protected String getFamilyName() {
         return familyName;
     }
 
-
-    public abstract String getFamilyName();
 
     public long getAge() {
         return 0;
