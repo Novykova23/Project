@@ -17,7 +17,7 @@ public final class Customer extends Person {
         return super.getGivenName();
     }
 
-    public static void setGivenName(String givenName) {
+    public void setGivenName(String givenName) {
         Customer.givenName = givenName;
     }
 
@@ -26,13 +26,9 @@ public final class Customer extends Person {
         return super.getFamilyName();
     }
 
-    public static void setFamilyName(String familyName) {
+    public void setFamilyName(String familyName) {
         Customer.familyName = familyName;
     }
 
-    @Override
-    public long getAge() {
-        return super.getAge();
-    }
 }
 
