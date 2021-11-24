@@ -23,8 +23,4 @@ public final class Photographer extends Person {
         this.familyName = familyName;
     }
 
-
-    public long getAge() {
-        return super.getAge();
-    }
 }
