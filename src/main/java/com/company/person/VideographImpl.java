@@ -7,6 +7,15 @@ public class VideographImpl extends Person implements Videograph {
         super(givenName, familyName);
     }
 
+    public VideographImpl(String givenName) {
+        super(givenName);
+    }
+
+    @Override
+    public String toString() {
+        return "VideographImpl{}";
+    }
+
     @Override
     public String getFamilyName() {
         return null;
