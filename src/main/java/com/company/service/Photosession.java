@@ -3,10 +3,25 @@ package com.company.service;
 import com.company.person.Photographer;
 
 import java.util.List;
+import java.util.Objects;
 
 public final class Photosession{
     private final int amountOfPhotos;
     private final List customerList;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Photosession that = (Photosession) o;
+        return amountOfPhotos == that.amountOfPhotos && cost == that.cost && Objects.equals(customerList, that.customerList) && Objects.equals(photographer, that.photographer);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(amountOfPhotos, customerList, cost, photographer);
+    }
+
     private final int cost;
     private final Photographer photographer;
 
