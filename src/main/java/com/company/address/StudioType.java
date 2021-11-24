@@ -1,5 +1,15 @@
-package com.company.adress;
+package com.company.address;
 
 public enum StudioType {
-    PHOTO, VIDEO, GAME
+    PHOTO, VIDEO, GAME;
+
+    public static <T extends Enum<T>> T valueOf(Class<T> enumType, String name) {
+        return Enum.valueOf(enumType, name);
+    }
+
+
+    @Override
+    public String toString() {
+        return "StudioType{}";
+    }
 }
