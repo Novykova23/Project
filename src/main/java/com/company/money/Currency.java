@@ -18,4 +18,12 @@ public enum Currency {
     public String getnText() {
         return nText;
     }
+
+    @Override
+    public String toString() {
+        return "Currency{" +
+                "text='" + text + '\'' +
+                ", nText='" + nText + '\'' +
+                '}';
+    }
 }
