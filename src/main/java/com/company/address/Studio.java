@@ -1,14 +1,26 @@
-package com.company.adress;
+package com.company.address;
 
 public final class Studio {
     ;
     private final String name;
-    private final Adress adress;
+    private final Address address;
     private final StudioType studioType;
 
-    public Studio(String name, Adress adress, StudioType type) {
+    public String getName() {
+        return name;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public StudioType getStudioType() {
+        return studioType;
+    }
+
+    public Studio(String name, Address address, StudioType type) {
         this.name = name;
-        this.adress = adress;
+        this.address = address;
         this.studioType = type;
     }
 
@@ -16,7 +28,7 @@ public final class Studio {
         public String toString() {
             return "Studio{" +
                     ", name='" + name + '\'' +
-                    ", adress=" + adress +
+                    ", address=" + address +
                     ", studioType=" + studioType + "}";
         }
 }
