@@ -6,21 +6,16 @@ public final class Owner extends Person {
         super(givenName);
     }
 
+    public Owner(String givenName) {
+        super(givenName);
+    }
+
     public int hash(int amount, int currency) {
         return 0;
     }
 
     public Owner(String john, String doe, String familyName, String givenName) {
         super(givenName, familyName);
-    }
-
-
-
-    @Override
-    public String toString() {
-        return "Owner{" +
-                "studios=" +
-                '}';
     }
 
 }
