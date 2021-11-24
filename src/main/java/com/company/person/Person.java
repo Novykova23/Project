@@ -9,23 +9,31 @@ public abstract class Person{
         this.familyName = familyName;
     }
 
-
     public Person(String givenName) {
-        this.givenName = givenName;
-        this.familyName = familyName;
     }
 
-    protected String getGivenName() {
+    public String getGivenName() {
         return givenName;
     }
 
-    protected String getFamilyName() {
+    public void setGivenName(String givenName) {
+        this.givenName = givenName;
+    }
+
+    public String getFamilyName() {
         return familyName;
     }
 
+    public void setFamilyName(String familyName) {
+        this.familyName = familyName;
+    }
 
-    public long getAge() {
-        return 0;
-    };
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + givenName + '\'' +
+                "family name='" + familyName + '\''+
+                '}';
+    }
 }
 
