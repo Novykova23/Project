@@ -12,17 +12,13 @@ public class VideographImpl extends Person implements Videograph {
     }
 
     @Override
-    public String toString() {
-        return "VideographImpl{}";
-    }
-
-    @Override
     public String getFamilyName() {
         return null;
     }
 
     @Override
-    public void makeVideo() {
-
+    public String toString() {
+        return "VideographImpl{}";
     }
+
 }
