@@ -1,7 +1,7 @@
 package com.company.address;
 
 public final class Studio {
-    ;
+
     private final String name;
     private final Address address;
     private final StudioType studioType;
