@@ -7,6 +7,10 @@ public class AssistantImpl extends Person implements Assistant {
         super(givenName, familyName);
     }
 
+    public AssistantImpl(String givenName) {
+        super(givenName);
+    }
+
     @Override
     public void help() {
 
