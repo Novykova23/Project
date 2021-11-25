@@ -23,6 +23,23 @@ public final class Photosession{
     }
 
     private final int cost;
+
+    public int getAmountOfPhotos() {
+        return amountOfPhotos;
+    }
+
+    public List getCustomerList() {
+        return customerList;
+    }
+
+    public int getCost() {
+        return cost;
+    }
+
+    public Photographer getPhotographer() {
+        return photographer;
+    }
+
     private final Photographer photographer;
 
     public Photosession(int amountOfPhotos, List customerList, int cost, Photographer photographer) {
