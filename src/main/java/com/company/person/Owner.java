@@ -1,6 +1,8 @@
 package com.company.person;
 
 public final class Owner extends Person {
+    public Owner() {
+    }
 
     public Owner(String familyName, String givenName) {
         super(givenName);
