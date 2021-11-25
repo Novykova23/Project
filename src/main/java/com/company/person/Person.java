@@ -12,6 +12,9 @@ public abstract class Person{
     public Person(String givenName) {
     }
 
+    protected Person() {
+    }
+
     public String getGivenName() {
         return givenName;
     }
@@ -34,6 +37,10 @@ public abstract class Person{
                 "name='" + givenName + '\'' +
                 "family name='" + familyName + '\''+
                 '}';
+    }
+
+    public void makeVideo() {
+
     }
 }
 
