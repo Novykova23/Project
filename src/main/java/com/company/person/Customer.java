@@ -12,6 +12,10 @@ public final class Customer extends Person {
         this();
     }
 
+    public Customer(String givenName) {
+        super(givenName);
+    }
+
     @Override
     public String getGivenName() {
         return super.getGivenName();
