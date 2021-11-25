@@ -7,6 +7,10 @@ public class CleanerImpl extends Person implements Cleaner {
         super(givenName, familyName);
     }
 
+    public CleanerImpl(String givenName) {
+        super(givenName);
+    }
+
     @Override
     public void clean() {
 
