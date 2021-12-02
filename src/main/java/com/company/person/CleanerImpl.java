@@ -10,9 +10,13 @@ public class CleanerImpl extends Person implements Cleaner {
     public CleanerImpl(String givenName) {
         super(givenName);
     }
-
-    @Override
     public void clean() {
+
+    }
+    public void washTowels(){
+
+    }
+    public void waterPots(){
 
     }
 }
