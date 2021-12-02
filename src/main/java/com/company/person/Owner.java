@@ -1,6 +1,6 @@
 package com.company.person;
 
-public final class Owner extends Person {
+public class Owner extends Person {
     public Owner() {
     }
 
