@@ -1,19 +1,8 @@
 package com.company.person;
-public final class Photographer extends Person {
+public class Photographer extends Person {
     private String familyName;
     private String givenName;
 
-    public Photographer(String givenName, String familyName, String familyName1, String givenName1) {
-        super(givenName, familyName);
-        this.familyName = familyName1;
-        this.givenName = givenName1;
-    }
-
-    public Photographer(String givenName, String familyName, String givenName1) {
-        super(givenName);
-        this.familyName = familyName;
-        this.givenName = givenName1;
-    }
 
     public Photographer(String givenName, String familyName) {
         super(givenName);
@@ -35,4 +24,11 @@ public final class Photographer extends Person {
         this.familyName = familyName;
     }
 
+    @Override
+    public String toString() {
+        return "Photographer{" +
+                "familyName='" + familyName + '\'' +
+                ", givenName='" + givenName + '\'' +
+                '}';
+    }
 }
