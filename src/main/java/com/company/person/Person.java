@@ -39,8 +39,5 @@ public abstract class Person{
                 '}';
     }
 
-    public void makeVideo() {
-
-    }
 }
 
