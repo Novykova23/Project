@@ -4,6 +4,4 @@ public interface Assistant{
     static void help() {
 
     }
-
-    void help();
 }
