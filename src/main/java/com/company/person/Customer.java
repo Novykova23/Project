@@ -34,5 +34,6 @@ public final class Customer extends Person {
         Customer.familyName = familyName;
     }
 
+
 }
 
