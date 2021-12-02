@@ -3,8 +3,8 @@ package com.company.money;
 import java.util.Objects;
 
 final class Money{
-    private final int amount;
-    private final int currency;
+    private int amount;
+    private int currency;
 
     public Money(int amount, int currency) {
         this.amount = amount;
@@ -19,6 +19,13 @@ final class Money{
         return amount;
     }
 
+    public void setAmount(int amount) {
+        this.amount = amount;
+    }
+
+    public void setCurrency(int currency) {
+        this.currency = currency;
+    }
 
     public static void usd(int amount) {
     }
@@ -44,10 +51,6 @@ final class Money{
 
     }
 
-
-    public int getCurrency() {
-        return currency;
-    }
 
     @Override
     public String toString() {
