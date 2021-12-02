@@ -1,10 +1,22 @@
 package com.company.address;
 
-public final class Studio {
+public class Studio {
 
-    private final String name;
-    private final Address address;
-    private final StudioType studioType;
+    private String name;
+    private Address address;
+    private StudioType studioType;
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    public void setStudioType(StudioType studioType) {
+        this.studioType = studioType;
+    }
 
     public String getName() {
         return name;
