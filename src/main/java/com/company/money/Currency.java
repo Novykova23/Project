@@ -3,8 +3,8 @@ public enum Currency {
     USD("Dollar", "Dollars"),
     UAH("Hryvna", "Hryvnias"),
     EUR("Euro", "Euro");
-    private final String text;
-    private final String nText;
+    private String text;
+    private String nText;
 
     Currency(String text, String nText) {
         this.text = text;
@@ -17,6 +17,14 @@ public enum Currency {
 
     public String getnText() {
         return nText;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public void setnText(String nText) {
+        this.nText = nText;
     }
 
     @Override
