@@ -10,9 +10,12 @@ public class AssistantImpl extends Person implements Assistant {
     public AssistantImpl(String givenName) {
         super(givenName);
     }
-
-    @Override
     public void help() {
-
+    }
+    public void buyPaper(){
+        System.out.println("Фотопапір, ватмани, холсти");
+    }
+    public void makeCoffee(){
+        System.out.println("Американо, латте, еспресо для клієнтів");
     }
 }
