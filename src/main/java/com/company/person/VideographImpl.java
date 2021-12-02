@@ -11,14 +11,8 @@ public class VideographImpl extends Person implements Videograph {
         super(givenName);
     }
 
-    @Override
-    public String getFamilyName() {
-        return null;
-    }
-
-    @Override
-    public String toString() {
-        return "VideographImpl{}";
+    public void makeWeddingFilm(){
+        System.out.println("Зйомка фільму в найкоротші терміни");
     }
 
 }
