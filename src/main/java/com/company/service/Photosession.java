@@ -6,8 +6,27 @@ import java.util.List;
 import java.util.Objects;
 
 public final class Photosession{
-    private final int amountOfPhotos;
-    private final List customerList;
+    private int amountOfPhotos;
+    private List customerList;
+
+    private Photographer photographer;
+
+    public Photosession(int amountOfPhotos, List customerList, int cost, Photographer photographer) {
+        assert amountOfPhotos > 0 : "the photographer should take at least one photo";
+
+        this.amountOfPhotos = amountOfPhotos;
+        this.customerList = customerList;
+        this.cost = cost;
+        this.photographer = photographer;
+    }
+
+    public void setAmountOfPhotos(int amountOfPhotos) {
+        this.amountOfPhotos = amountOfPhotos;
+    }
+
+    public void setCustomerList(List customerList) {
+        this.customerList = customerList;
+    }
 
     @Override
     public boolean equals(Object o) {
@@ -32,6 +51,10 @@ public final class Photosession{
         return customerList;
     }
 
+    public void setPhotographer(Photographer photographer) {
+        this.photographer = photographer;
+    }
+
     public int getCost() {
         return cost;
     }
@@ -40,16 +63,6 @@ public final class Photosession{
         return photographer;
     }
 
-    private final Photographer photographer;
-
-    public Photosession(int amountOfPhotos, List customerList, int cost, Photographer photographer) {
-        assert amountOfPhotos > 0 : "the photographer should take at least one photo";
-
-        this.amountOfPhotos = amountOfPhotos;
-        this.customerList = customerList;
-        this.cost = cost;
-        this.photographer = photographer;
-    }
 
     @Override
     public String toString() {
