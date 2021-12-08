@@ -6,6 +6,12 @@ public class Studio {
     private Address address;
     private StudioType studioType;
 
+    public Studio(String name, Address address, StudioType type) {
+        this.name = name;
+        this.address = address;
+        this.studioType = type;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
@@ -30,11 +36,7 @@ public class Studio {
         return studioType;
     }
 
-    public Studio(String name, Address address, StudioType type) {
-        this.name = name;
-        this.address = address;
-        this.studioType = type;
-    }
+
 
         @Override
         public String toString() {
