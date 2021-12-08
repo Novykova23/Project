@@ -6,21 +6,16 @@ final class Money{
     private int amount;
     private int currency;
 
-    public Money(int amount, int currency) {
-        this.amount = amount;
-        this.currency = currency;
-    }
-
     public int getAmount() {
-        return amount;
-    }
-
-    public int amount() {
         return amount;
     }
 
     public void setAmount(int amount) {
         this.amount = amount;
+    }
+
+    public int getCurrency() {
+        return currency;
     }
 
     public void setCurrency(int currency) {
@@ -43,9 +38,6 @@ final class Money{
         return Objects.hash(amount, currency);
     }
 
-    public static Money eur(int amount) {
-        return null;
-    }
 
     public static void uah(int amount) {
 

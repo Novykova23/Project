@@ -4,19 +4,25 @@ import com.company.interfaces.Cleaner;
 
 public class CleanerImpl extends Person implements Cleaner {
     protected CleanerImpl(String givenName, String familyName) {
-        super(givenName, familyName);
-    }
-
-    public CleanerImpl(String givenName) {
         super(givenName);
     }
-    public void clean() {
+         public String givenName;
+         public String familyName;
+         public int vaccuumCleaner;
+         public int washingMachine;
 
-    }
-    public void washTowels(){
+            public CleanerImpl(String givenName, String familyName, int vaccuumCleaner, int washingMachine) {
+                this.vaccuumCleaner = vaccuumCleaner;
+                this.washingMachine = washingMachine;
+            }
 
-    }
-    public void waterPots(){
+        public void clean () {
 
+        }
+        public void washTowels () {
+
+        }
+        public void waterPots () {
+
+        }
     }
-}

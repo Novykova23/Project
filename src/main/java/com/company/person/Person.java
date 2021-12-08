@@ -4,12 +4,10 @@ public abstract class Person{
     private String givenName;
     private String familyName;
 
-    protected Person(String givenName, String familyName) {
-        this.givenName = givenName;
-        this.familyName = familyName;
+    public Person(String givenName, String familyName) {
     }
 
-    public Person(String givenName) {
+    protected Person(String givenName) {
     }
 
     protected Person() {

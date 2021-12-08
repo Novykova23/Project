@@ -4,7 +4,7 @@ import com.company.interfaces.Videograph;
 
 public class VideographImpl extends Person implements Videograph {
     protected VideographImpl(String givenName, String familyName) {
-        super(givenName, familyName);
+        super(givenName);
     }
 
     public VideographImpl(String givenName) {
@@ -15,4 +15,8 @@ public class VideographImpl extends Person implements Videograph {
         System.out.println("Зйомка фільму в найкоротші терміни");
     }
 
+    @Override
+    public void makeVideo() {
+
+    }
 }

@@ -1,12 +1,12 @@
 package com.company.person;
-public class Photographer extends Person {
+public class Photographer<familyName> extends Person {
     private String familyName;
     private String givenName;
 
 
     public Photographer(String givenName, String familyName) {
+
         super(givenName);
-        this.familyName = familyName;
     }
 
     public String getGivenName() {
