@@ -11,7 +11,10 @@ public final class Photosession{
 
     private Photographer photographer;
 
-    public Photosession(int amountOfPhotos, List customerList, int cost, Photographer photographer) {
+    public Photosession(int amountOfPhotos,
+                        List customerList,
+                        int cost,
+                        Photographer photographer) {
         assert amountOfPhotos > 0 : "the photographer should take at least one photo";
 
         this.amountOfPhotos = amountOfPhotos;
@@ -20,12 +23,32 @@ public final class Photosession{
         this.photographer = photographer;
     }
 
+    public int getAmountOfPhotos() {
+        return amountOfPhotos;
+    }
+
     public void setAmountOfPhotos(int amountOfPhotos) {
         this.amountOfPhotos = amountOfPhotos;
     }
 
+    public List getCustomerList() {
+        return customerList;
+    }
+
     public void setCustomerList(List customerList) {
         this.customerList = customerList;
+    }
+
+    public Photographer getPhotographer() {
+        return photographer;
+    }
+
+    public void setPhotographer(Photographer photographer) {
+        this.photographer = photographer;
+    }
+
+    public int getCost() {
+        return cost;
     }
 
     @Override
@@ -43,28 +66,7 @@ public final class Photosession{
 
     private final int cost;
 
-    public int getAmountOfPhotos() {
-        return amountOfPhotos;
-    }
-
-    public List getCustomerList() {
-        return customerList;
-    }
-
-    public void setPhotographer(Photographer photographer) {
-        this.photographer = photographer;
-    }
-
-    public int getCost() {
-        return cost;
-    }
-
-    public Photographer getPhotographer() {
-        return photographer;
-    }
-
-
-    @Override
+        @Override
     public String toString() {
         return "Photosession{" +
                 ", amountOfPhotos=" + amountOfPhotos +

@@ -1,39 +1,37 @@
 package com.company.person;
 
 public final class Customer extends Person {
-    private static String givenName;
-    private static String familyName;
+    public String mobileNumber;
+    public String orderNumber;
 
-    public Customer() {
-        super(givenName);
+    public Customer(String givenName, String familyName) {
+        super(givenName, familyName);
+        this.mobileNumber = mobileNumber;
+        this.orderNumber = orderNumber;
     }
 
-    public Customer(String mr, String proper) {
-        this();
+    public String getMobileNumber() {
+        return mobileNumber;
     }
 
-    public Customer(String givenName) {
-        super(givenName);
+    public void setMobileNumber(String mobileNumber) {
+        this.mobileNumber = mobileNumber;
+    }
+
+    public String getOrderNumber() {
+        return orderNumber;
+    }
+
+    public void setOrderNumber(String orderNumber) {
+        this.orderNumber = orderNumber;
     }
 
     @Override
-    public String getGivenName() {
-        return super.getGivenName();
+    public String toString() {
+        return "Customer{" +
+                "mobileNumber='" + mobileNumber + '\'' +
+                ", orderNumber='" + orderNumber + '\'' +
+                '}';
     }
-
-    public void setGivenName(String givenName) {
-        Customer.givenName = givenName;
-    }
-
-    @Override
-    public String getFamilyName() {
-        return super.getFamilyName();
-    }
-
-    public void setFamilyName(String familyName) {
-        Customer.familyName = familyName;
-    }
-
-
 }
 

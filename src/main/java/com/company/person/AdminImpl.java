@@ -3,13 +3,10 @@ package com.company.person;
 import com.company.interfaces.Admin;
 
 public class AdminImpl extends Person implements Admin {
-    protected AdminImpl(String givenName, String familyName) {
-        super(givenName, familyName);
-    }
     public int salary;
     public int workplace;
 
-    public AdminImpl (String givenName, String familyName, int salary, int workplace){
+    public AdminImpl (int salary, int workplace){
         this.salary = salary;
         this.workplace = workplace;
     }
@@ -22,4 +19,27 @@ public class AdminImpl extends Person implements Admin {
         System.out.println("Send messages about offer status");
     }
 
+    public int getSalary() {
+        return salary;
+    }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
+    public int getWorkplace() {
+        return workplace;
+    }
+
+    public void setWorkplace(int workplace) {
+        this.workplace = workplace;
+    }
+
+    @Override
+    public String toString() {
+        return "AdminImpl{" +
+                "salary=" + salary +
+                ", workplace=" + workplace +
+                '}';
+    }
 }

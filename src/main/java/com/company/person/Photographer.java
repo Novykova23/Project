@@ -1,34 +1,36 @@
 package com.company.person;
-public class Photographer<familyName> extends Person {
-    private String familyName;
-    private String givenName;
-
+public class Photographer extends Person {
+    private String camera;
+    private String laptop;
 
     public Photographer(String givenName, String familyName) {
-
-        super(givenName);
+        super(givenName, familyName);
+        this.camera = camera;
+        this.laptop = laptop;
     }
 
-    public String getGivenName() {
-        return super.getGivenName();
+
+    public String getCamera() {
+        return camera;
     }
 
-    public void setGivenName(String givenName) {
-        this.givenName = givenName;
+    public void setCamera(String camera) {
+        this.camera = camera;
     }
 
-    public String getFamilyName() {
-        return super.getFamilyName();
+    public String getLaptop() {
+        return laptop;
     }
-    public void setFamilyName(String familyName) {
-        this.familyName = familyName;
+
+    public void setLaptop(String laptop) {
+        this.laptop = laptop;
     }
 
     @Override
     public String toString() {
         return "Photographer{" +
-                "familyName='" + familyName + '\'' +
-                ", givenName='" + givenName + '\'' +
+                "camera='" + camera + '\'' +
+                ", laptop='" + laptop + '\'' +
                 '}';
     }
 }
