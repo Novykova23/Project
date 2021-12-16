@@ -3,27 +3,26 @@ public class Photographer extends Person {
     private String camera;
     private String laptop;
 
-    public Photographer(String givenName, String familyName) {
-        super(givenName, familyName);
+    public Photographer(String camera, String laptop) {
         this.camera = camera;
         this.laptop = laptop;
     }
 
 
     public String getCamera() {
-        return camera;
+        return String.valueOf(camera);
     }
 
     public void setCamera(String camera) {
-        this.camera = camera;
+        this.camera = String.valueOf(Integer.parseInt(camera));
     }
 
     public String getLaptop() {
-        return laptop;
+        return String.valueOf(laptop);
     }
 
     public void setLaptop(String laptop) {
-        this.laptop = laptop;
+        this.laptop = String.valueOf(Integer.parseInt(laptop));
     }
 
     @Override

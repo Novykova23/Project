@@ -39,11 +39,6 @@ public abstract class Person{
     }
 
     @Override
-    public int hashCode() {
-        return Objects.hash(givenName, familyName);
-    }
-
-    @Override
     public String toString() {
         return "Person{" +
                 "givenName='" + givenName + '\'' +

@@ -6,8 +6,7 @@ public class VideographImpl extends Person implements Videograph {
     public String videocamera;
     public String tripod;
 
-    public VideographImpl(String givenName, String familyName, String videocamera, String tripod) {
-        super(givenName, familyName);
+    public VideographImpl(String videocamera, String tripod) {
         this.videocamera = videocamera;
         this.tripod = tripod;
     }
