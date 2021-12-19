@@ -25,6 +25,12 @@ public final class Customer extends Person {
         this.orderNumber = orderNumber;
     }
 
+    public void makeOrders (){
+        System.out.println("Make me 10 photos tomorrow");
+    }
+    public void callToAdmin (){System.out.println("How many time i wii wait?");
+    }
+
     @Override
     public String toString() {
         return "Customer{" +

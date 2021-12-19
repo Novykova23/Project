@@ -8,21 +8,26 @@ public class Photographer extends Person {
         this.laptop = laptop;
     }
 
-
     public String getCamera() {
-        return String.valueOf(camera);
+        return camera;
     }
 
     public void setCamera(String camera) {
-        this.camera = String.valueOf(Integer.parseInt(camera));
+        this.camera = camera;
     }
 
     public String getLaptop() {
-        return String.valueOf(laptop);
+        return laptop;
     }
 
     public void setLaptop(String laptop) {
-        this.laptop = String.valueOf(Integer.parseInt(laptop));
+        this.laptop = laptop;
+    }
+
+    public void makePhotos (){
+        System.out.println("I can make best your pictures!");
+    }
+    public void retouchPhotos(){System.out.println("You will be beatifull in my photos!");
     }
 
     @Override

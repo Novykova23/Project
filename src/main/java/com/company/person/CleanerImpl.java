@@ -11,17 +11,6 @@ public class CleanerImpl extends Person implements Cleaner {
         this.washingMachine = washingMachine;
     }
 
-    public void clean() {
-
-    }
-
-    public void washTowels() {
-
-    }
-
-    public void waterPots() {
-
-    }
 
     public int getVaccuumCleaner() {
         return vaccuumCleaner;
@@ -37,6 +26,19 @@ public class CleanerImpl extends Person implements Cleaner {
 
     public void setWashingMachine(int washingMachine) {
         this.washingMachine = washingMachine;
+    }
+
+
+    public void clean() {
+
+    }
+
+    public void washTowels() {
+
+    }
+
+    public void waterPots() {
+
     }
 
     @Override

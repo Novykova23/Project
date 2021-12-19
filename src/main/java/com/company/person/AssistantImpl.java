@@ -10,15 +10,6 @@ public class AssistantImpl extends Person implements Assistant {
         this.budget = budget;
         this.coffeeMachine = coffeeMachine;
     }
-    public void help() {
-    }
-    public void buyPaper(){
-        System.out.println("Some sorts of paper");
-    }
-    public void makeCoffee(){
-        System.out.println("Coffee for customers");
-    }
-
 
     public int getBudget() {
         return budget;
@@ -34,6 +25,15 @@ public class AssistantImpl extends Person implements Assistant {
 
     public void setCoffeeMachine(int coffeeMachine) {
         this.coffeeMachine = coffeeMachine;
+    }
+
+    public void help() {
+    }
+    public void buyPaper(){
+        System.out.println("Some sorts of paper");
+    }
+    public void makeCoffee(){
+        System.out.println("Coffee for customers");
     }
 
     @Override

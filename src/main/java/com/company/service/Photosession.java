@@ -5,20 +5,21 @@ import com.company.person.Photographer;
 import java.util.List;
 import java.util.Objects;
 
+@SuppressWarnings("ALL")
 public final class Photosession{
     private int amountOfPhotos;
-    private List customerList;
-
+    private final ThreadLocal<List> customerList = new ThreadLocal<List>();
     private Photographer photographer;
 
+    @SuppressWarnings("rawtypes")
     public Photosession(int amountOfPhotos,
                         List customerList,
                         int cost,
                         Photographer photographer) {
-        assert amountOfPhotos > 0 : "the photographer should take at least one photo";
+        if (amountOfPhotos <= 0) throw new AssertionError("the photographer should take at least one photo");
 
         this.amountOfPhotos = amountOfPhotos;
-        this.customerList = customerList;
+        this.customerList.set(customerList);
         this.cost = cost;
         this.photographer = photographer;
     }
@@ -32,11 +33,11 @@ public final class Photosession{
     }
 
     public List getCustomerList() {
-        return customerList;
+        return customerList.get();
     }
 
     public void setCustomerList(List customerList) {
-        this.customerList = customerList;
+        this.customerList.set(customerList);
     }
 
     public Photographer getPhotographer() {
@@ -61,7 +62,7 @@ public final class Photosession{
 
     @Override
     public int hashCode() {
-        return Objects.hash(amountOfPhotos, customerList, cost, photographer);
+        return Objects.hash(amountOfPhotos, customerList.get(), cost, photographer);
     }
 
     private final int cost;

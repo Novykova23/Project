@@ -41,10 +41,6 @@ final class Money {
         }
 
 
-        public static void uah ( int amount){
-
-        }
-
         @Override
         public String toString () {
             return "Money{" +

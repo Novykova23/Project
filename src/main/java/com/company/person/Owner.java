@@ -11,10 +11,6 @@ public class Owner extends Person {
         this.workers = workers;
     }
 
-    public Owner(String john, String doe) {
-
-    }
-
     public String getIncome() {
         return income;
     }
@@ -39,13 +35,7 @@ public class Owner extends Person {
         this.workers = workers;
     }
 
-    public int hash(int amount, int currency) {
-        return 0;
-    }
 
-    public Owner(String john, String doe, String familyName, String givenName) {
-        super(givenName, familyName);
-    }
 
     @Override
     public String toString() {
