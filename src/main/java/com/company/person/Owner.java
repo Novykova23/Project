@@ -5,7 +5,7 @@ public class Owner extends Person {
     public String property;
     public String workers;
 
-    public Owner(String income, String property, String workers) {
+    public Owner(String givenName, String familyName) {
         this.income = income;
         this.property = property;
         this.workers = workers;

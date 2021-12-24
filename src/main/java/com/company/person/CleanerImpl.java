@@ -6,7 +6,7 @@ public class CleanerImpl extends Person implements Cleaner {
     public int vaccuumCleaner;
     public int washingMachine;
 
-    public CleanerImpl(int vaccuumCleaner, int washingMachine) {
+    public CleanerImpl(String givenName, String familyName, int vaccuumCleaner, int washingMachine) {
         this.vaccuumCleaner = vaccuumCleaner;
         this.washingMachine = washingMachine;
     }

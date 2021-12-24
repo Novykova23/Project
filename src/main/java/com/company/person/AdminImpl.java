@@ -6,7 +6,7 @@ public class AdminImpl extends Person implements Admin {
     public int salary;
     public int workplace;
 
-    public AdminImpl (int salary, int workplace){
+    public AdminImpl (String givenName, String familyName, int salary, int workplace){
         this.salary = salary;
         this.workplace = workplace;
     }

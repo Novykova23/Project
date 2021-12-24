@@ -3,7 +3,7 @@ public class Photographer extends Person {
     private String camera;
     private String laptop;
 
-    public Photographer(String camera, String laptop) {
+    public Photographer(String givenName, String familyName) {
         this.camera = camera;
         this.laptop = laptop;
     }
