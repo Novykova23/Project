@@ -6,10 +6,10 @@ public class Studio {
     private Address address;
     private StudioType studioType;
 
-    public Studio(String name, Address address, StudioType type) {
+    public Studio(String name, Address address, StudioType studioType) {
         this.name = name;
         this.address = address;
-        this.studioType = type;
+        this.studioType = studioType;
     }
 
     public String getName() {

@@ -1,5 +1,6 @@
 package com.company.service;
 
+import com.company.person.Customer;
 import com.company.person.Photographer;
 
 import java.util.List;
@@ -8,20 +9,16 @@ import java.util.Objects;
 @SuppressWarnings("ALL")
 public final class Photosession {
     private int amountOfPhotos;
-    private List customerList;
+    private List<Customer> customerList;
     private Photographer photographer;
+    private final int cost;
 
-    @SuppressWarnings("rawtypes")
-    public Photosession(int amountOfPhotos,
-                        List customerList,
-                        int cost,
-                        Photographer photographer) {
-        if (amountOfPhotos <= 0) throw new AssertionError("the photographer should take at least one photo");
 
+    public Photosession(int amountOfPhotos, List<Customer> customerList, Photographer photographer, int cost) {
         this.amountOfPhotos = amountOfPhotos;
         this.customerList = customerList;
-        this.cost = cost;
         this.photographer = photographer;
+        this.cost = cost;
     }
 
     public int getAmountOfPhotos() {
@@ -67,7 +64,6 @@ public final class Photosession {
         return hash;
     }
 
-    private final int cost;
 
         @Override
     public String toString() {

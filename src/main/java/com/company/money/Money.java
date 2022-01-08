@@ -6,7 +6,7 @@ final class Money {
     private int amount;
     private int currency;
 
-    private Money(int amount, int currency) {
+    public Money(int amount, int currency) {
         this.amount = amount;
         this.currency = currency;
     }

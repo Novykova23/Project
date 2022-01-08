@@ -6,11 +6,11 @@ public class AssistantImpl extends Person implements Assistant {
     public int budget;
     public int coffeeMachine;
 
-    public AssistantImpl ( String givenName, String familyName, int budget, int coffeeMachine){
+    public AssistantImpl(String givenName, String familyName, int budget, int coffeeMachine) {
+        super(givenName, familyName);
         this.budget = budget;
         this.coffeeMachine = coffeeMachine;
     }
-
 
     public int getBudget() {
         return budget;

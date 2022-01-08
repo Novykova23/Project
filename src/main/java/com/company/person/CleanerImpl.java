@@ -7,10 +7,10 @@ public class CleanerImpl extends Person implements Cleaner {
     public int washingMachine;
 
     public CleanerImpl(String givenName, String familyName, int vaccuumCleaner, int washingMachine) {
+        super(givenName, familyName);
         this.vaccuumCleaner = vaccuumCleaner;
         this.washingMachine = washingMachine;
     }
-
 
     public int getVaccuumCleaner() {
         return vaccuumCleaner;
